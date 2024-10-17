@@ -36,7 +36,7 @@ def main():
                 exit()
             for bullet in shots:
                 if object.collision_check(bullet):
-                    object.kill()
+                    object.split(bullet)
         for object in drawable:
             object.draw(screen)
         pygame.display.flip()
